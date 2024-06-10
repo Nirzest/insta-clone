@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+    .footer{
+    padding: 0 2vw;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    top: 93%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a{
+    text-decoration: none;
+}
+.footer i{
+    font-size: 35px;
+    color: white;
+}
+
+.footer img{
+    width: 40px;
+    height: 40px;
+    /* background-color: crimson; */
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+    .main{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+    .username{
+        padding: 0 4vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 8%;
+        width: 100%;
+        /* background-color: red; */
+    }
+    .name{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+    }
+    .name i{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .name h4{
+        font-size: 20px;
+        color: white;
+        font-weight: 600;
+        font-family: Montserrat;
+    }
+    .upp-icon{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5vw;
+    }
+    .upp-icon i{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+    }
+    .follower{
+        height: 13%;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        gap: 5vw;
+        padding: 0 3vw;
+    }
+    .image{
+        overflow: hidden;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: beige; */
+    }
+    .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .image:nth-child(1){
+        border-radius: 50px;
+        margin-right: 3vw;
+    }
+
+    .image .posts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+    }
+    .posts h2{
+        font-size: 20px;
+        color: white;
+        font-family: sans-serif;
+    }
+    .posts h3{
+        font-family: sans-serif;
+        font-size: 16px;
+        color: white;
+        text-transform: capitalize;
+    }
+    .edit{
+        font-family: sans-serif;
+        padding: 0 3.5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        width: 100%;
+        height: 10%;
+        /* background-color: red; */
+        color: white;
+    }
+    .edit h2{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .edit h3{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .edit h4{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .button{
+        padding: 0 2vw;
+        width: 100%;
+        height: 5%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    button{
+        height: 80%;
+        width: 44%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #333;
+        color: white;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 8px;
+    }
+    .iconn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #333;
+        padding: 1.3vw;
+        border-radius: 8px;
+    }
+    .iconn i{
+        font-size: 20px;
+        color: white;
+    }
+    .story{
+        padding: 0 2vw;
+        height: 13%;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+    }
+    .story-tag{
+        width: 80px;
+        height: 80px;
+        /* background-color: beige; */
+        border: 3px solid #333;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .story-tag img{
+        height: 85%;
+        width: 85%;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 50%;
+    }
+    .story-tag i{
+        font-size: 30px;
+        color: white;
+    }
+    .same{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6vw;
+    }
+    .same h5{
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+    }
+    .feed{
+        height: 35%;
+        width: 100%;
+        /* background-color: red; */
+    }
+    .feed .upp{
+        width: 100%;
+        height: 20%;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .upp i{
+        font-size: 30px;
+        color: white;
+    }
+    .section{
+        padding-top: 0.6vw;
+        width: 32%;
+        height: 45%;
+        border-top: 2px solid white;
+        /* background-color: white; */
+    }
+    .section img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .posts a{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+    }
+    .outer{
+        width: 100%;
+        min-height: 100vh;
+        position: fixed;
+        left: 100%;
+        background-color: rgb(0, 0, 0);
+       
+    }
+    .icoon{
+        padding: 0 2vw;
+        display: flex;
+        gap: 8px;
+        height: 5vh;
+        width: 100%;
+        /* background-color: rgba(255, 0, 0, 0.293); */
+        display: flex;
+        align-items: center;
+    }
+    .icoon i{
+        color: white;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .icoon h2{
+        color: white;
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+    }
+    .search{
+        padding: 1vw;
+        width: 100%;
+        height: 5vh;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ser{
+        width: 95%;
+        background-color: #2a2929a7;
+        height:  100%;
+        border-radius: 10px;
+        display: flex;
+    }
+    .ico{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+    .ico i{
+        font-size: 22px;
+        color: rgba(115, 112, 112, 0.853);
+        font-weight: 500;
+    }
+    .ico input{
+        width: 80%;
+        background-color: transparent;
+        border: none ;
+        outline: none;
+        color: white;
+        font-size: 22px;
+    }
+    .your-acco{
+        padding: 0 2vw;
+        height: 4vh;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: sans-serif;
+        color: #b9b4b4;
+    }
+    h3{
+        display: flex;
+        gap: 5px;
+        font-size: 18px;
+    }
+    .acco-center{
+        width: 100%;
+        height: 14vh;
+    }
+    .upp{
+        font-family: sans-serif;
+        padding: 0 2vw;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        height: 60%;
+        /* background-color: rgba(229, 176, 176, 0.856); */
+    }
+    .upp i{
+        color: #9d9c9ca7;
+    }
+    .upp .text{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .text h3{
+        font-size: 18px;
+        color: rgb(207, 201, 201);
+    }
+    .text h5{
+        font-size: 12px;
+        color: #797575a7;
+    }
+    .bot{
+        width: 100%;
+        height: 40%;
+        /* background-color: rgb(130, 35, 35); */
+        display: flex;
+        align-items: center;
+        padding: 0 2vw;
+        border-bottom: 4px solid rgba(69, 68, 68, 0.645);
+    }
+    .bot p{
+        font-size: 14px;
+        font-family: sans-serif;
+        color: white;
+    }
+    .bot p span{
+        color: rgba(7, 119, 159, 0.992);
+    }
+    .how-insta{
+        margin-top: 2vh;
+        width: 100%;
+        height: 28vh;
+        /* background-color: red; */
+        /* border-top: 2px solid rgba(69, 68, 68, 0.645); */
+        border-bottom: 4px solid rgba(69, 68, 68, 0.645);
+    }
+    .how-insta .intro{
+        padding: 0 2vw;
+        width: 100%;
+        height: 3vh;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        font-family: sans-serif;
+    }
+    .intro h4{
+        font-size: 13px;
+        color: gray;
+    }
+    .logo{
+        padding: 0 2vw;
+        width: 100%;
+        height: 5vh;
+        /* background-color: yellow; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo i{
+        font-size: 25px;
+        color: rgb(146, 142, 142);
+        font-weight: 100;
+    }
+    .icoo{
+        font-family: sans-serif;
+        /* background-color: red; */
+        gap: 10px;
+        width: 55%;
+        display: flex;
+        align-items: center;
+        color: #b7b5b5;
+    }
+    .icoo h2{
+        font-size: 19px;
+    }
+    .icoo i{
+        font-size: 24px;
+        color: #b7b5b5;
+    }
+    .content{
+        border-bottom: 4px solid rgba(69, 68, 68, 0.645);
+        height: 25vh;
+        width: 100%;
+        /* background-color: red; */
+        border-top: 2px solid rgba(69, 68, 68, 0.645);
+    }
+    .who-can{
+        margin-top: 2vh;
+        padding: 0 2vw;
+        width: 100%;
+        height: 2.5vh;
+        /* background-color: blue; */
+    }
+    .who-can h4{
+        font-family: sans-serif;
+        font-size: 14px;
+        color: gray ;
+    }
+    .logo h5{
+        font-family: sans-serif;
+        width: 40%;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: gray;
+        font-family: sans-serif;
+        font-size: 13px;
+    }
+    .how-other{
+        margin-top: 1.2vh;
+        width: 100%;
+        height: 10vh;
+        /* background-color: red; */
+    }
+    .other{
+        height: 2.5vh;
+        /* background-color: blue; */
+        display: flex;
+        width: 100%;
+        padding: 0 2vw;
+        font-family: sans-serif;
+        align-items: center;
+    }
+    .other h4{
+        font-size: 13px;
+        color: gray;
+    }
+
+</style>
+<body>
+    <div class="outer">
+        <div class="icoon">
+            <i class="ri-arrow-left-line"></i>
+            <h2>Settings and activity</h2>
+        </div>
+        <div class="search">
+            <div class="ser">
+            <div class="ico">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        </div>
+        <div class="your-acco">
+            <h4>Your acconut</h4>
+            <h3><i class="ri-meta-fill"></i>Meta</h3>
+        </div>
+        <div class="acco-center">
+            <div class="upp">
+                <i class="ri-map-pin-user-line"></i>
+                <div class="text">
+                    <h3>Account Center</h3>
+                    <h5>Password, security, personal details, ads</h5>
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="bot">
+                <p>Manage your connected experience and account settings across Meta technologies. <span>Learn more</span></p>
+            </div>
+        </div>
+        <div class="how-insta">
+            <div class="intro">
+                <h4>How you use instagram</h4>
+            </div>
+            <div class="logo">
+                <div class="icoo">
+                    <i class="ri-shield-check-line"></i>
+                    <h2>Saved</h2>
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="logo">
+                <div class="icoo">
+                    <i class="ri-time-line"></i>
+                    <h2>Time spent</h2>
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="logo">
+                <div class="icoo">
+                    <i class="ri-inbox-archive-line"></i>
+                    <h2>Archive</h2>
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="logo">
+                <div class="icoo">
+                    <i class="ri-gallery-line"></i>
+                    <h2>Your activity</h2>
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="logo">
+                <div class="icoo">
+                    <i class="ri-notification-3-line"></i>
+                    <h2>Notification</h2>
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+        </div>
+        <div class="content">
+            <div class="who-can">
+                <h4>Who can see your content</h4>
+            </div>
+            <div class="logo">
+                <div class="icoo">
+                    <i class="ri-lock-2-line"></i>
+                    <h2>Account privacy</h2>
+                </div>
+                 <h5>public</h5><i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="logo">
+                <div class="icoo">
+                    <i class="ri-shield-star-line"></i>
+                    <h2>Close friend</h2>
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="logo">
+                <div class="icoo">
+                    <i class="ri-spam-2-line"></i>
+                    <h2>Blocked</h2>
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="logo">
+                <div class="icoo">
+                    <i class="ri-edit-circle-line"></i>
+                    <h2>Hide story and live</h2>
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+        </div>
+        <div class="how-other">
+            <div class="other">
+                <h4>How others can intreact with you</h4>
+            </div>
+            <div class="logo">
+                <div class="icoo">
+                    <i class="ri-message-3-line"></i>
+                    <h2>Messages & story</h2>
+                </div>
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="logo">
+                <div class="icoo">
+                    <i class="ri-at-line"></i>
+                    <h2>Tags & mentions</h2>
+                </div>
+                 <h5>public</h5><i class="ri-arrow-right-s-line"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <a href="/"><i class="ri-home-5-fill"></i></a>
+        <a href="/search"><i class="ri-search-line"></i></a>
+        <a href="/add"><i class="ri-add-box-line"></i></a>
+        <i class="ri-app-store-line"></i>
+        <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">    
+    </div>
+    <div class="main">
+        <div class="username">
+            <div class="name">
+                <h4>_Melisa_roser</h4>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="upp-icon">
+                <i class="ri-threads-line"></i>
+                <i class="ri-add-box-line"></i>
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+        <div class="follower">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1621786032758-112a390cb7ca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="image">
+                <div class="posts">
+               <h2>1</h2>
+               <h3>posts</h3>
+            </div>
+            </div>
+            <div class="image">
+                <div class="posts">
+                   <a href="/follower">
+                    <h2>2.5M</h2>
+                    <h3>follower</h3>
+                   </a>
+                 </div>
+            </div>
+            <div class="image">
+                <div class="posts">
+                    <a href="/following">
+                        <h2>235</h2>
+                    <h3>following</h3>
+                    </a>
+                 </div>
+            </div>
+        </div>
+        <div class="edit">
+            <h2>MELISA ROSER</h2>
+            <h3>22</h3>
+            <h4>Can't wait for anybody</h4>
+        </div>
+        <div class="button">
+            <button>Edit profile</button>
+            <button>Share Profile</button>
+            <div class="iconn">
+                <i class="ri-user-add-fill"></i>
+            </div>
+        </div>
+        <div class="story">
+            <div class="same">
+            <div class="story-tag">
+                <img src="https://images.unsplash.com/photo-1621786032758-112a390cb7ca?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <h5>#$$$</h5>
+        </div>
+        <div class="same">
+            <div class="story-tag">
+                <i class="ri-add-line"></i>
+            </div>
+            <h5>New</h5>
+            </div>
+        </div>
+        <div class="feed">
+            <div class="upp">
+                <i class="ri-layout-grid-2-line"></i>
+                <i class="ri-video-line"></i>
+                <i class="ri-file-user-line"></i>
+            </div>
+            <div class="section">
+                <img src="https://images.unsplash.com/photo-1621784563330-caee0b138a00?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  var menu = document.querySelector(".username .upp-icon i:nth-child(3)");
+  var cross = document.querySelector(".icoon i");
+  
+  var tl = gsap.timeline()
+
+  tl.to(".outer",{
+    left: 0,
+    duration: 0.8,
+  })
+  tl.to("cross",{
+    opacity: 0,
+    duration:0.3
+  })
+
+  tl.pause()
+
+  menu.addEventListener("click", function(){
+    tl.play()
+  })
+
+  cross.addEventListener("click", function(){
+    tl.reverse()
+  })
+
+  menu.addEventListener("click", function(){
+    
+  })
+</script>
+
+
+</html>

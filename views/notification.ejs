@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+      }
+      html, body{
+    height: 100%;
+    width: 100%;
+      }
+    .footer{
+    padding: 0 2vw;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    top: 93%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .footer a{
+    text-decoration: none;
+}
+    .footer i{
+    font-size: 35px;
+    color: white;
+    }
+
+    .footer img{
+    width: 40px;
+    height: 40px;
+    /* background-color: crimson; */
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    }
+    .main{
+        width: 100%;
+        height: 93.1%;
+        background-color: black;
+    }
+    .uppe{
+        width: 100%;
+        height: 7%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.316);
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+        /* background-color: blue; */
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+        /* background-color: yellow; */
+    }
+    .uppe h4{
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        }
+        .latest{
+            padding: 0 5vw;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 5%;
+            /* background-color: red; */
+        }
+        .latest h5{
+            font-size: 15px;
+            color: white;
+        }
+        .notifie{
+            gap: 1vw;
+            display: flex;
+            align-items: center;
+            padding: 0 2vw;
+            width: 100%;
+            height: 10%;
+            /* background-color: red; */
+        }
+        .imag{
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .imag img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .name{
+            padding: 0 1vw;
+            height: 100%;
+            width: 45%;
+            /* background-color: blue; */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+        .follo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 35%;
+            /* background-color: white; */
+        }
+        button{
+            width: 97%;
+            height: 40%;
+            background-color: #0395F6;
+            color: white;
+            font-weight: 500;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+         .month{
+            padding-top: 1vh;
+        }
+        .image{
+            width: 70px;
+            height: 70px;
+            /* background-color: red; */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .image img{
+            width: 70px;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            /* border-radius: 50px; */
+        }
+        .name1{
+            padding: 0 1vw;
+            height: 100%;
+            width: 65%;
+            /* background-color: blue; */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+        span{
+            font-size: 13px;
+        }
+        .up{
+            padding: 0 3vw;
+            width: 100%;
+            height: 8%;
+            /* background-color: red; */
+            display: flex;
+            align-items: center;
+        }
+        .up h2{
+            font-size: 25px;
+            font-weight: 600;
+            color: white;
+            text-transform: capitalize;
+        }
+        .request{
+            display: flex;
+            align-items: center;
+            padding: 0 5vw;
+            height: 10%;
+            width: 100%;
+            /* background-color: red; */
+        }
+        .ima{
+            position: relative;
+            width: 65px;
+            height: 65px;
+            /* background-color: blue; */
+            border-radius: 50%;
+        }
+        .ima img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 50px;
+            z-index: 10;
+        }
+        .ima img:nth-child(2){
+            position: absolute;
+            top: -20%;
+            right: 20%;
+            z-index: 2;
+        }
+        .requ{
+            padding-left: 2vw;
+            height: 100%;
+            width: 50%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .requ h4{
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+
+        }
+        .requ h5{
+            font-size: 15px;
+            font-weight: 500;
+            color: white;
+        }
+        .requ p{
+            color: white;
+            font-size: 12px;
+            font-weight: 300;
+        }
+        .butto{
+            height: 100%;
+            width: 35%;
+            /* background-color: blue; */
+            display: flex;
+            align-items: center;
+        }
+        .butto button{
+            height: 38%;
+            width: 98%;
+            background-color: #0395F6;
+            color: white;
+            border: none;
+        }
+        
+
+    </style>
+
+<body>
+    <div class="footer">
+        <a href="/"><i class="ri-home-5-fill"></i></a>
+        <i class="ri-search-line"></i>
+        <a href="/add"><i class="ri-add-box-line"></i></a>
+        <i class="ri-app-store-line"></i>
+        <a href="/profile"><img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>    
+    </div>
+    <div class="main">
+        <div class="up">
+            <h2>notification</h2>
+        </div>
+        <div class="request">
+            <div class="ima">
+                <img src="https://images.unsplash.com/photo-1516575150278-77136aed6920?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <img src="https://images.unsplash.com/photo-1532600980931-7f84dffd7a0c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="requ">
+                <h4>Follow Request</h4>
+                <h5>Angela <span>and 2 other</span></h5>
+                <p>5h. ago</p>
+            </div>
+            <div class="butto">
+                <button>Confirm</button>
+            </div>
+        </div>
+        <div class="uppe">
+            <div class="left">
+            <h4>Following</h4>
+            </div>
+            <div class="right">
+            <h4>Your</h4>
+        </div>
+        </div>
+        <div class="latest">
+            <h5>This Weeks</h5>
+        </div>
+        <div class="notifie">
+            <div class="imag">
+                <img src="https://images.unsplash.com/photo-1507101105822-7472b28e22ac?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="name">
+                <h4>Melisa Dodge</h4>
+                <p>started following with you. 5h</p>
+            </div>
+            <div class="follo">
+                <button>Follow</button>
+            </div>
+        </div>
+        <div class="latest">
+            <h5 class="month">This Months</h5>
+        </div>
+        <div class="notifie">
+            <div class="imag">
+                <img src="https://images.unsplash.com/photo-1484328861630-cf73b7d34ea3?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="name">
+                <h4>Vertika Roy</h4>
+                <p>started following with you. 2w</p>
+            </div>
+            <div class="follo">
+                <button>Follow</button>
+            </div>
+        </div>
+        <div class="notifie">
+            <div class="imag">
+                <img src="https://images.unsplash.com/photo-1485178575877-1a13bf489dfe?q=80&w=2001&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="name">
+                <h4>Caseri Roser</h4>
+                <p>started following with you. 3w</p>
+            </div>
+            <div class="follo">
+                <button>Follow</button>
+            </div>
+        </div>
+        <div class="notifie">
+            <div class="imag">
+                <img src="https://plus.unsplash.com/premium_photo-1661582285350-645f9944d9c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="name1">
+                <h4>Alisa Anderson</h4>
+                <p>liked your post 5h.</p>
+            </div>
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1515734674582-29010bb37906?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+        <div class="notifie">
+            <div class="imag">
+                <img src="https://images.unsplash.com/photo-1498551172505-8ee7ad69f235?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="name">
+                <h4>Melisa Dodge</h4>
+                <p>started following with you. 5h</p>
+            </div>
+            <div class="follo">
+                <button>Follow</button>
+            </div>
+        </div>
+        <div class="notifie">
+            <div class="imag">
+                <img src="https://images.unsplash.com/photo-1541823709867-1b206113eafd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="name">
+                <h4>Melisa Dodge <span>and other 1 people follow them</span></h4>
+            </div>
+            <div class="follo">
+                <button>Follow Back</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

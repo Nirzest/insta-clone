@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html, body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    }
+    .top{
+        gap: 8px;
+        padding: 0 2vw;
+        width: 100%;
+        height: 5vh;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+    }
+    .ico{
+        color: white;
+    }
+    .ico i{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .name{
+        color: white;
+        font-size: 18px;
+    }
+    .follow{
+        padding: 0 2vw;
+        height: 6vh;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+    }
+    .follow h5{
+        font-size: 18px;
+        border-bottom: 2px solid white;
+    }
+    .search{
+        width: 100%;
+        height: 6.5vh;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ser{
+        gap: 10px;
+        width: 90%;
+        height: 70%;
+        background-color: #42414189;
+        border: none;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 0 3vw;
+
+    }
+    .ser .iconn{
+        color: white;
+    }
+    .iconn i{
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .search input{
+        font-size: 20px;
+        padding: 0 2vw;
+        width: 70%;
+        height: 70%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: white;
+    }
+    .box{
+        padding: 0 2vw;
+        width: 100%;
+        height: 10vh;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: space-between;
+    }
+    .image{
+        width: 70px;
+        height: 70px;
+        /* background-color: blue; */
+        border-radius: 50px;
+    }
+    .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 50px;
+    }
+    button{
+        height: 3.8vh;
+        width: 15vh;
+        background-color: rgb(37, 38, 39);
+        border: none;
+        font-size: 15px;
+        text-transform: capitalize;
+        color: white;
+        border-radius: 10px;
+    }
+    .namee{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 38%;
+        
+    }
+    .namee h3{
+        font-size: 20px;
+    }
+    .namee h6{
+        font-size: 14px;
+    }
+    .top .ico a{
+        text-decoration: none;
+        color: white;
+    }
+</style>
+<body>
+    <div class="top">
+        <div class="ico">
+           <a href="/profile"> <i class="ri-arrow-left-line"></i></a>
+        </div>
+        <div class="name">
+           <h3> _malisa_roser</h3>
+        </div>
+    </div>
+    <div class="follow">
+        <h5>2.5M followers</h5>
+        <h5>196 followings</h5>
+        <h5>0 subcription</h5>
+    </div>
+    <div class="search">
+        <div class="ser">
+        <div class="iconn">
+            <i class="ri-search-line"></i>
+        </div>
+        <input type="text" placeholder="Search">
+    </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1509868918748-a554ad25f858?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="namee">
+            <h3>Rashel more</h3>
+            <h6>Rashel moreee</h6>
+        </div>
+        <button class="button" onclick="changeColor()">follow</button>
+        <div class="icon">
+            <i class="ri-more-fill"></i>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1507101105822-7472b28e22ac?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="namee">
+            <h3>Megan seri</h3>
+            <h6>megan seri</h6>
+        </div>
+        <button>follow</button>
+        <div class="icon">
+            <i class="ri-more-fill"></i>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="namee">
+            <h3>Natasha notiyal</h3>
+            <h6>Natasha</h6>
+        </div>
+        <button>follow</button>
+        <div class="icon">
+            <i class="ri-more-fill"></i>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1462804993656-fac4ff489837?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="namee">
+            <h3>Henick manck</h3>
+            <h6>Hanick nam</h6>
+        </div>
+        <button>follow</button>
+        <div class="icon">
+            <i class="ri-more-fill"></i>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1469460340997-2f854421e72f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="namee">
+            <h3>Mochile deger</h3>
+            <h6>Mochle</h6>
+        </div>
+        <button>follow</button>
+        <div class="icon">
+            <i class="ri-more-fill"></i>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="namee">
+            <h3>Ronit arya</h3>
+            <h6>Ronitarya</h6>
+        </div>
+        <button>follow</button>
+        <div class="icon">
+            <i class="ri-more-fill"></i>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1615212116387-d66aba3d76f9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="namee">
+            <h3>Venita lorence</h3>
+            <h6>venita loree</h6>
+        </div>
+        <button>follow</button>
+        <div class="icon">
+            <i class="ri-more-fill"></i>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1615212814093-f56085658024?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="namee">
+            <h3>Erica sinclere</h3>
+            <h6>Erica sincl</h6>
+        </div>
+        <button>follow</button>
+        <div class="icon">
+            <i class="ri-more-fill"></i>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1556402592-2cd4af071087?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="namee">
+            <h3>Nobody apart</h3>
+            <h6>Nobodyeee</h6>
+        </div>
+        <button>follow</button>
+        <div class="icon">
+            <i class="ri-more-fill"></i>
+        </div>
+    </div>
+
+
+
+    <script>
+      function changeColor() {
+    var button = document.querySelector('.button');
+    button.style.backgroundColor = getRandomColor();
+  }
+
+  // Function to generate a random color
+  function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+    </script>
+</body>
+</html>

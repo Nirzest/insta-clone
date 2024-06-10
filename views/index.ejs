@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main{
+    position: relative;
+    background-color: #000;
+}
+
+.uper{
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    background-color: black;
+}
+
+.con{
+    display: flex;
+    gap: 15px;
+}
+
+.con i{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+.con a{
+    text-decoration: none;
+}
+
+.uper h1{
+    font-family: Montserrat;
+    color: white;
+    font-size: 20px;
+    /* font-style: italic; */
+}
+
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+}
+
+.story{
+    padding-right: 3vw;
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    /* background-color: blue; */
+}
+.circle{
+    position: relative;
+    height: 65px;
+    width: 65px;
+    background-color: white;
+    border-radius: 50px; 
+}
+
+
+
+.circle img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    object-position: top;
+}
+
+.circle h1{
+    position: absolute;
+    top: 71%;
+    left: 71%;
+    color: #fff;
+    font-weight: 100;
+    /* background-color: black; */
+}
+.post-section{
+    /* border: 1px solid white; */
+    margin-top: 2vh;
+    height: 65vh;
+    width: 100%;
+    background-color: black;
+}
+
+.icon-name {
+    padding: 1vw 2vw;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 10%;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.icon-name .icon{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+
+.name h5{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    /* font-style: oblique; */
+    text-transform: capitalize;
+    font-family: Montserrat;
+}
+
+.post-section .post{
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    /* border: 2px solid white; */
+}
+
+.post-section .post img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.post-section .like{
+    padding: 1vw 2vw;
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.like .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    /* background-color: blue; */
+    border-radius: 50px;
+    /* border: 1px solid white; */
+}
+
+.icon a{
+    text-decoration: none;
+}
+
+.like .icon i{
+    
+    color: white;
+    width: 80%;
+    height: 80%;
+    font-size: 30px;
+}
+
+.save{
+    display: flex;
+    align-items: center;
+}
+
+.save i{
+    position: absolute;
+    right: 3%;
+    color: white;
+    font-size: 30px;
+}
+
+.footer{
+    padding: 0 2vw;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    top: 93%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer a{
+    text-decoration: none;
+}
+
+.footer i{
+    font-size: 35px;
+    color: white;
+}
+
+.footer img{
+    width: 40px;
+    height: 40px;
+    /* background-color: crimson; */
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+</style>
+<body>
+    <div class="footer">
+        <i class="ri-home-5-fill"></i>
+        <a href="/search"><i class="ri-search-line"></i></a>
+        <a href="/add"><i class="ri-add-box-line"></i></a>
+        <i class="ri-app-store-line"></i>
+        <a href="/profile"><img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>    
+    </div>
+    <div class="main">
+        <div class="uper">
+            <h1>Instagram</h1>
+            <div class="con">
+                <a href="/notification"><i class="ri-heart-fill"></i></a>
+                <a href="/massage"><i class="ri-chat-3-fill"></i></a>
+            </div>
+        </div>
+        <div class="page1">
+            <div class="story">
+                <img src="" alt="">
+                <div class="circle">
+                    <img src="https://images.unsplash.com/photo-1564485377539-4af72d1f6a2f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <h1>+</h1>
+                </div>
+                <div class="circle">
+                    <img src="https://images.unsplash.com/photo-1518833895278-e789e65b2b93?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="circle">
+                    <img src="https://images.unsplash.com/photo-1469460340997-2f854421e72f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="circle">
+                    <img src="https://images.unsplash.com/photo-1516726817505-f5ed825624d8?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="circle">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1288&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+            </div>
+            <div class="post-section">
+                <div class="icon-name">
+                    <div class="icon">
+                        <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                <div class="name">
+                   <h5>nimara lancelord</h5>
+                </div>
+            </div>
+            <div class="post">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1320&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="like">
+                <div class="icon">
+                    <i class="ri-heart-line"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-chat-3-line"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-share-2-line"></i>
+                </div>
+                <div class="save">
+                    <i class="ri-save-line"></i>
+                </div>
+            </div>
+            </div>
+
+            <div class="post-section">
+                <div class="icon-name">
+                    <div class="icon">
+                        <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                <div class="name">
+                   <h5>razal caze</h5>
+                </div>
+            </div>
+            <div class="post">
+                <img src="https://images.unsplash.com/photo-1456885284447-7dd4bb8720bf?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="like">
+                <div class="icon">
+                    <i class="ri-heart-line"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-chat-3-line"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-share-2-line"></i>
+                </div>
+                <div class="save">
+                    <i class="ri-save-line"></i>
+                </div>
+            </div>
+            </div>
+
+            <div class="post-section">
+                <div class="icon-name">
+                    <div class="icon">
+                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                <div class="name">
+                   <h5>mery chain</h5>
+                </div>
+            </div>
+            <div class="post">
+                <img src="https://images.unsplash.com/photo-1495385794356-15371f348c31?q=80&w=1340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="like">
+                <div class="icon">
+                    <i class="ri-heart-line"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-chat-3-line"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-share-2-line"></i>
+                </div>
+                <div class="save">
+                    <i class="ri-save-line"></i>
+                </div>
+            </div>
+            </div>
+
+            <div class="post-section">
+                <div class="icon-name">
+                    <div class="icon">
+                        <img src="https://images.unsplash.com/photo-1513490043969-e15088e02c8e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                <div class="name">
+                   <h5>venis tailler</h5>
+                </div>
+            </div>
+            <div class="post">
+                <img src="https://images.unsplash.com/photo-1513374933342-24bf646c8f5f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="like">
+                <div class="icon">
+                    <i class="ri-heart-line"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-chat-3-line"></i>
+                </div>
+                <div class="icon">
+                    <i class="ri-share-2-line"></i>
+                </div>
+                <div class="save">
+                    <i class="ri-save-line"></i>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

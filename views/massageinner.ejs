@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    html, body{
+        height: 100%;
+        width: 100%;
+        background-color: black;
+   }
+   .name{
+    width: 100%;
+    height: 8vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #777;
+   }
+   .ico{
+    width: 10%;
+    height: 100%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ico i{
+    font-size: 30px;
+    color: white;
+}
+.dp{
+    height: 40px;
+    width: 40px;
+    /* background-color: blue; */
+    border-radius: 50px;
+}
+.dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50px;
+}
+.naam{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.naam h5{
+    font-size: 14px;
+    color: rgba(0, 213, 255, 0.789);
+    font-weight: 500;
+}
+.inner-text{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 1vw;
+    width: 100%;
+    height: 91vh;
+    /* background-color: blue; */
+}
+.st{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+    color: white;
+    gap: 10px;
+}
+.image{
+    height: 40px;
+    width: 40px;
+    /* background-color: red; */
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+.st1{
+    position: relative;
+    width: 60%;
+    height: 4.3vh;
+    background-color: rgba(255, 0, 128, 0.832);
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+}
+.st1 h6{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 12px;
+    font-weight: 500;
+}
+.st1 h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+.mass-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    width: 100%;
+    height: 4.3vh;
+    /* background-color: blue; */
+}
+.st2{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(255, 0, 128, 0.832);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 25px;
+    padding: 2vw;
+}
+.st2 h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+.st2 h6{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 12px;
+    font-weight: 500;
+}
+.imag{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    /* background-color: aliceblue; */
+}
+.imag img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50px;
+}
+.massage-box{
+    position: fixed;
+    height: 6.9vh;
+    width: 100%;
+    /* background-color: red; */
+    top: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay{
+    padding: 0 2vw;
+    height: 80%;
+    width: 96%;
+    /* background-color: #777; */
+    display: flex;
+    align-items: center;
+    border: 2px solid #8888887d;
+    border-radius: 30px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 153, 255);
+    border-radius: 20px;
+    
+}
+.icon i{
+    font-size: 22px;
+    color: white;
+}
+input{
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+    padding: 0 2vw;
+    font-size: 20px;
+    color: white;
+    border: none;
+    outline: none;
+}
+.icooo{
+    width: 30%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icooo i{
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+.ico a{
+    text-decoration: none;
+}
+</style>
+<body>
+    <div class="massage-box">
+        <div class="overlay">
+        <div class="icon">
+            <i class="ri-camera-line"></i>
+        </div>
+        <input type="text" placeholder="Message">
+        <div class="icooo">
+            <i class="ri-mic-fill"></i>
+            <i class="ri-image-fill"></i>
+            <i class="ri-emoji-sticker-fill"></i>
+        </div>
+    </div>
+    </div>
+   <div class="name">
+    <div class="ico">
+        <a href="/massage"><i class="ri-arrow-left-line"></i></a>
+    </div>
+    <div class="dp">
+        <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?q=80&w=1707&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    <div class="naam">
+        <h4>Charls methli</h4>
+        <h5>online</h5>
+    </div>
+   </div> 
+   <div class="inner-text">
+    <div class="st">
+        <div class="image">
+        <img src="https://images.unsplash.com/photo-1516297276-0fe32eb94534?q=80&w=1707&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    <div class="st1">
+        <h3>hello how are you</h3>
+        <h6>1:06 pm</h6>
+    </div>
+    </div>
+    <div class="mass-2">
+        <div class="st2">
+            <h3>Hey what's up</h3>
+            <h6>1:07 pm</h6>
+        </div>
+        <div class="imag">
+            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1727&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+    </div>
+    <div class="st">
+        <div class="image">
+        <img src="https://images.unsplash.com/photo-1516297276-0fe32eb94534?q=80&w=1707&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    <div class="st1">
+        <h3>I'm fine what about you</h3>
+        <h6>1:06 pm</h6>
+    </div>
+    </div>
+    <div class="mass-2">
+        <div class="st2">
+            <h3>I'm ok</h3>
+            <h6>1:07 pm</h6>
+        </div>
+        <div class="imag">
+            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1727&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+    </div>
+    <div class="st">
+        <div class="image">
+        <img src="https://images.unsplash.com/photo-1516297276-0fe32eb94534?q=80&w=1707&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    <div class="st1">
+        <h3>Where are you from</h3>
+        <h6>1:06 pm</h6>
+    </div>
+    </div>
+    <div class="mass-2">
+        <div class="st2">
+            <h3>I'm from czechk</h3>
+            <h6>1:07 pm</h6>
+        </div>
+        <div class="imag">
+            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1727&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+    </div>
+    <div class="st">
+        <div class="image">
+        <img src="https://images.unsplash.com/photo-1516297276-0fe32eb94534?q=80&w=1707&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    <div class="st1">
+        <h3>Ohh it's a nice contery</h3>
+        <h6>1:06 pm</h6>
+    </div>
+    </div>
+    <div class="mass-2">
+        <div class="st2">
+            <h3>What about you</h3>
+            <h6>1:07 pm</h6>
+        </div>
+        <div class="imag">
+            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1727&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+    </div>
+    <div class="st">
+        <div class="image">
+        <img src="https://images.unsplash.com/photo-1516297276-0fe32eb94534?q=80&w=1707&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    <div class="st1">
+        <h3>I'm from us</h3>
+        <h6>1:06 pm</h6>
+    </div>
+    </div>
+    <div class="mass-2">
+        <div class="st2">
+            <h3>Ohh nice</h3>
+            <h6>1:07 pm</h6>
+        </div>
+        <div class="imag">
+            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1727&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+    </div>
+   </div>
+</body>
+</html>

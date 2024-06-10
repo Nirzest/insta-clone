@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+        .footer{
+    padding: 0 2vw;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    top: 93%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer i{
+    font-size: 35px;
+    color: white;
+}
+
+.footer img{
+    width: 40px;
+    height: 40px;
+    /* background-color: crimson; */
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.upper{
+    padding: 0 2vw;
+    height: 8%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.icon-text{
+    display: flex;
+    align-items: center;
+    gap: 7vw;
+}
+.icon-text i{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+.icon-text h2{
+    font-size: 21px;
+    color: white;
+    font-weight: 500;
+}
+.upper a{
+    font-size: 20px;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 600;
+    color: rgb(54, 60, 245);
+}
+.post{
+    height: 400px;
+    width: 100%;
+    /* background-color: red; */
+}
+.post img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.gallery{
+    height: 320px;
+    width: 100%;
+    /* background-color: white; */
+}
+.gallery .uper{
+    padding: 0 2vw;
+    height: 15%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text h2{
+    color: white;
+    font-size: 20px;
+    font-weight:500;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+
+}
+.icon i{
+    padding: 1vw;
+    background-color: #333;
+    font-size: 22px;
+    color: white;
+    border-radius: 6px;
+}
+.bottom-feed{
+    padding: 0 1vw;
+    height: 85%;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5vw;
+    justify-content: space-between;
+}
+.bottom-feed .box{
+    height: 33%;
+    width: 24.5%;
+    background-color: #33333367;
+    border-radius: 3px;
+}
+
+    </style>
+
+<body>
+    <div class="footer">
+        <a href="/"><i class="ri-home-5-fill"></i></a>
+        <a href="/search"><i class="ri-search-line"></i></a>
+        <i class="ri-add-box-line"></i>
+        <i class="ri-app-store-line"></i>
+        <a href="/profile"><img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></a>    
+    </div>
+    <div class="main">
+        <div class="upper">
+            <div class="icon-text">
+                <a href="/"><i class="ri-close-line"></i></a>
+                <h2>New Post</h2>
+            </div>
+            <a href="">Next</a>
+        </div>
+        <div class="post">
+            <img src="https://images.unsplash.com/photo-1621784562877-e971f1f79f47?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="gallery">
+            <div class="uper">
+                <div class="text">
+                    <h2>Recent<i class="ri-arrow-down-s-line"></i> </h2>
+                </div>
+                <div class="icon">
+                    <i class="ri-send-plane-fill"></i>
+                    <i class="ri-camera-line"></i>
+                </div>
+            </div>
+            <div class="bottom-feed">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
